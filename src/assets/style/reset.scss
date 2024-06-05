@@ -3,22 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html,
 body {
     font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STHeiti, \\534E\6587\7EC6\9ED1, sans-serif;
-    color: #666;
-    font-size: 14px;
+    color: #333;
+    font-size: 16px;
+    height: 100%;
 }
 
 a {
     font-style: normal;
     text-decoration: none;
-    color: #5079d9;
+    color: #333;
     cursor: pointer;
     transition: all .15s ease-out;
 
     &:hover {
-        color: #6b95ea;
+        color: #7b7b7b;
     }
 }
 

@@ -1,1 +1,120 @@
-@import "./reset.scss"
+@import "./element-style.scss";
+@import "./reset.scss";
+
+#app {
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+// 1-100px padding madding
+@for $i from 1 to 100 {
+    .p-#{$i} {
+        padding: #{$i}px !important;
+    }
+
+    .pt-#{$i} {
+        padding-top: #{$i}px !important;
+    }
+
+    .pr-#{$i} {
+        padding-right: #{$i}px !important;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: #{$i}px !important;
+    }
+
+    .pl-#{$i} {
+        padding-left: #{$i}px !important;
+    }
+
+    .plr-#{$i} {
+        padding-left: #{$i}px !important;
+        padding-right: #{$i}px !important;
+    }
+
+    .ptb-#{$i} {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+    }
+
+    .m-#{$i} {
+        margin: #{$i}px !important;
+    }
+
+    .mt-#{$i} {
+        margin-top: #{$i}px !important;
+    }
+
+    .mr-#{$i} {
+        margin-right: #{$i}px !important;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: #{$i}px !important;
+    }
+
+    .ml-#{$i} {
+        margin-left: #{$i}px !important;
+    }
+
+    .mlr-#{$i} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+    }
+
+    .mtb-#{$i} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+    }
+}
+
+// 1-200px width height
+@for $i from 1 to 200 {
+    .container-#{$i} {
+        width: #{$i}px !important;
+    }
+
+    .h-#{$i} {
+        height: #{$i}px !important;
+    }
+}
+
+// 1.超小屏幕下 小于768 布局容器宽度为 100%
+@media screen and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  
+    .goods-box {
+        width: 49% !important;
+    }
+  }
+  
+  // 2.小屏幕下 大于等于768 布局容器改为 750px
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  // 3.中等屏幕下 大于等于 992px 布局容器修改为 970px
+  @media screen and (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  // 4.大屏幕下 大于等于1200 布局容器修改为 1170
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
