@@ -25,12 +25,7 @@
               />
             </template>
           </el-table-column>
-          <el-table-column
-            prop="goodsPrice"
-            label="商品单价"
-            width="180"
-            align="center"
-          >
+          <el-table-column prop="goodsPrice" label="商品单价" align="center">
           </el-table-column>
           <el-table-column label="商品数量" align="center">
             <template #default="{ row }">
@@ -49,7 +44,7 @@
               <span class="col-total">{{ row.goodsTotalPrice }}</span>
             </template>
           </el-table-column>
-          <el-table-column label="商品操作" align="center">
+          <el-table-column label="商品操作" width="120" align="center">
             <template #default="{ row }">
               <el-button
                 type="danger"
