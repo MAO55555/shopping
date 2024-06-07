@@ -12,12 +12,26 @@ const router = createRouter({
         {
           path: '/home',
           name: 'home',
-          component: import("@/views/Home/index.vue")
+          component: import("@/views/Home/index.vue"),
+          meta: {
+            show: true
+          }
         },
         {
           path: '/goods/detail',
           name: 'goodsDetail',
-          component: import("@/views/GoodsDetail/index.vue")
+          component: import("@/views/GoodsDetail/index.vue"),
+          meta: {
+            show: true
+          }
+        },
+        {
+          path: '/shopping/cart',
+          name: 'shoppingCart',
+          component: import("@/views/ShoppingCart/index.vue"),
+          meta: {
+            show: true
+          }
         }
       ]
     },

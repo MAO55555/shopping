@@ -1,6 +1,6 @@
 <template>
-  <div class="goods-detail">
-    <div class="container mt-20">
+  <div class="goods-detail main">
+    <div class="container">
       <el-row :gutter="50" class="goods-info ptb-20">
         <el-col :span="9">
           <Switch />
@@ -57,6 +57,7 @@
               size="large"
               icon="ShoppingCart"
               class="add-car-btn"
+              @click="addCar"
               >加入购物车</el-button
             >
             <el-button icon="Star" class="like-btn">喜欢</el-button>
@@ -69,9 +70,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useRoute } from "vue-router";
+import { useRouter } from "vue-router";
 import Switch from "@/views/Home/components/Switch/index.vue";
-import type { id } from "element-plus/es/locales.mjs";
 
 const versionType = ref([
   {
@@ -128,20 +128,28 @@ const selectVersion = (item: any) => {
 const selectColor = (item: any) => {
   colorActive.value = item.id;
 };
+
+const router = useRouter();
+const addCar = () => {
+  console.log("加入购物车");
+  router.push("/shopping/cart");
+};
 </script>
 
 <style lang="scss" scoped>
-.goods-info {
-  background: #fff;
-  .goods-name {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .sale-desc {
-    font-size: 14px;
-    color: #999;
-    padding: 15px 0;
-    border-bottom: 1px solid #e0e0e0;
+.goods-detail {
+  .goods-info {
+    background: #fff;
+    .goods-name {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .sale-desc {
+      font-size: 14px;
+      color: #999;
+      padding: 15px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
   }
   .title {
     font-size: 18px;
