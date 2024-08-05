@@ -19,6 +19,14 @@ const router = createRouter({
           }
         },
         {
+          path: '/goods/list',
+          name: 'goodsList',
+          component: import("@/views/GoodsList/index.vue"),
+          meta: {
+            show: true
+          }
+        },
+        {
           path: '/goods/detail',
           name: 'goodsDetail',
           component: import("@/views/GoodsDetail/index.vue"),
