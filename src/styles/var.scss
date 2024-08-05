@@ -1,0 +1,22 @@
+/* global css variable */
+$primary-color: var(--el-color-primary);
+:root {
+  --el-color-primary: #FF8082;
+  --el-header-bg-color: #FF8082;
+  --el-header-logo-text-color: #ffffff;
+  --el-header-menu-active-bg: rgb(199 102 103 / 32%);
+  --el-menu-active-color: #ffffff;
+  --el-menu-active-bg-color: #ddf5ee;
+  --el-menu-hover-bg-color: #e5f7ed;
+  --el-aside-border-color: #e4e7ed;
+  --el-fill-color-light: #f8f8f8;
+  --el-color-primary-light-3: #c76667;
+  --el-color-primary-light-5: rgb(199 102 103 / 44%);
+  --el-color-primary-light-9: rgb(199 102 103 / 14%);
+  --el-color-primary-dark-2: #FF8082;
+  --el-message-close-size: 24px;
+  --el-color-success: #e17274;
+  --el-text-color-primary: #303133;
+
+  // --el-text-color-regular: #000000;
+}

@@ -1,8 +1,14 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import "@/assets/style/common.scss"
-import ElementPlus from 'element-plus'
+
+import "@/styles/common.scss"
+import "@/styles/element-dark.scss"
+import "@/styles/element.scss";
+import "element-plus/theme-chalk/dark/css-vars.css";
 import 'element-plus/dist/index.css'
+import "@/styles/var.scss"
+
+import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 import App from './App.vue'

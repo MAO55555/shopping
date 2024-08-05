@@ -168,13 +168,13 @@ const addCar = () => {
       margin-top: 15px;
       cursor: pointer;
       &:hover {
-        border: 1px solid #409eff;
-        color: #409eff;
+        border: 1px solid var(--el-color-primary);
+        color: var(--el-color-primary);
       }
     }
     .active {
-      border: 1px solid #409eff;
-      color: #409eff;
+      border: 1px solid var(--el-color-primary);
+      color: var(--el-color-primary);
     }
   }
   .price {
